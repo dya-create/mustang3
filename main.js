@@ -4,6 +4,9 @@ var currentContactIndex = 0;
 var contactURLArray = [];
 var contactArray = [];
 
+function setStatus(status) {
+    document.getElementById("statusID").innerHTML = status;    
+}
 //starting of the application
 function initApplication() {
     console.log("Mustang Version 3 Starting")
