@@ -158,13 +158,13 @@ function getPlace() {
 }
 
 async function loadIndex() {
-    const response = await fetch("https://hostingjson.azurewebsites.net/index.json");
+    const response = await fetch("https://mustangversion1.azurewebsites.net/index.json");
     const contactIndex = await response.text(); //text version of index.json
 
     console.log("Index JSON:\n\n" + contactIndex);
     
 
-    const response2 = await fetch("https://hostingjson.azurewebsites.net/index.json");
+    const response2 = await fetch("https://mustangversion1.azurewebsites.net/index.json");
     const contactIndexJ = await response2.json(); //  a json version of the index
 
     for (i=0; i<contactIndexJ.length; i++) {
