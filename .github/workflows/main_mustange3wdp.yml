@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'mustange3WDP'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_98D4245F7CA74F8CB426F8F47C9C07D9 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_86C048EDD7E44DDE8235CCBB361AA4EE }}
           package: .
