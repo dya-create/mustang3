@@ -50,6 +50,21 @@ function loadContactsFromServer() {
     xmlhttp.send();   
 }
 
+function add() {
+    console.log('add()');
+    var newContact = {
+        firstName : document.getElementById("nameID").value,   
+        email : document.getElementById("emailID").value,  
+        city : document.getElementById("cityID").value,   
+        state : document.getElementById("stateID").value,
+        zip : document.getElementById("zipID").value,  
+    }
+    first.push(newContact.firstName)
+    contactArray.push(newContact);
+    currentContactIndex = currentContactIndex + 1;
+    viewCurrentContact();
+    document.getElementById("contactsID").innerHTML = JSON.stringify(contactArray,null,2);
+}
 
 // viewing current contact on input fieldd
 function viewCurrentContact(){
